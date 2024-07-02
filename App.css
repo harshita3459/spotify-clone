@@ -1,0 +1,321 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-bar {
+  padding: 5px;
+  margin-left: 20px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.profile-pic img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.main-content {
+  padding: 20px;
+  width: 150vh;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.playlists-section,
+.latest-release-section,
+.popular-artists-section,
+.genre-section,
+.latest-english-section,
+.latest-hindi-section {
+  margin-bottom: 40px;
+}
+
+.playlists {
+  display: flex;
+  gap: 20px;
+}
+
+.playlist {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.playlist img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.latest-release-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.latest-release {
+  width: 220px;
+  text-align: center;
+}
+
+.latest-release img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.release-info {
+  margin-left: 10px;
+}
+
+.release-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.release-info {
+  text-align: center;
+}
+
+.release-info h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.release-info p {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+
+.artists-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.queue-div img {
+  height: 150px;
+  border-radius: 10px;
+}
+.queue-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5%;
+  overflow: hidden;
+}
+.queue {
+  width: 20%;
+  overflow: hidden;
+}
+
+.artists-grid {
+  display: flex;
+  overflow: hidden;
+  /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
+  gap: 20px;
+}
+
+.popular-artists-section {
+  display: flex;
+  overflow: hidden;
+}
+.big-main-content {
+  display: flex;
+  justify-content: space-around;
+}
+.artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+}
+
+.latest-release-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popular-artists-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.artist h3 {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.genre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.genre img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.genre h3 {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+.latest-english-container {
+  /* overflow-x: auto; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.latest-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.latest-release {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+}
+
+.latest-release img {
+  width: 100px;
+
+  height: 100px;
+
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.release-info {
+  text-align: left;
+}
+
+.latest-hindi-container {
+  /* overflow-x: auto; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.latest-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.latest-release {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.latest-release img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.release-info {
+  text-align: center;
+}
+
+.release-info h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.release-info p {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+
+.latest-english-container::-webkit-scrollbar,
+.latest-hindi-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.latest-english-container::-webkit-scrollbar-thumb,
+.latest-hindi-container::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.latest-english-container::-webkit-scrollbar-thumb:hover,
+.latest-hindi-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
